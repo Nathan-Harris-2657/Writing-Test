@@ -10,20 +10,28 @@ Example: concatOdds([3, 2, 1], [9, 1, 1, 1, 4, 15, -1])
 ...should result in [-1, 1, 3, 9, 15]
 Think about the following; you may need to make assumptions or decisions about the prompt and how the code should behave:
 What should happen with unexpected inputs?
-<!--  -->
+<!-- Expect concatOdds([], []) to be [] -->
+ <!-- Expect concatOdds([1, 7 ,13, 21], []) to be [1, 7, 13, 21] -->
+  <!--  -->
 What kinds of unexpected inputs should we worry about?
-<!--  -->
+<!-- Expect concatOdds(["a", 3, 7], [1, 5, 8]) to be [1, 3, 5, 7] non numbers should not show -->
+ <!-- Expect concatOdds([5.5, 3, 7, 11], [8.2, "a"]) to be [3, 7, 11] only whole numbers should be shown-->
 What should happen when there are multiples of the same odd number in the arrays? (Hint: We gave you the answer to this one in the example above.)
-<!--  -->
+<!-- Expect concatOdds([3, 3, 6, 8], [1, 4, 5, 11]) to be [1, 3, 5, 11] identical numbers should only show once they are read and ingnore the extras -->
 
 
 Functional Tests:
 A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
 Think about the following; you may need to make assumptions or decisions about the prompt and how the feature should behave:
 What should happen if the cart is empty?
-<!--  -->
+<!-- display message that the cart is empty -->
+ <!-- redirect them back to the previous page(shopping page before the clicked checkout) -->
 What needs to be shown to the user at each step of check out?
-<!--  -->
+<!-- show summary of what you are purchasing -->
+ <!-- show quanity for every product -->
+  <!-- show offers that might go along with what your purchasing as last minute buys -->
+  <!-- show multiple ways to pay for the grocerys -->
+   <!-- upon payment completion show a confirmation page that payment has been excepted -->
 What behaviors of this feature does the prompt miss or gloss over?
-<!--  -->
+<!-- before purchase, user has the option to create and account that they can either skip or sign up -->
 Hint: Observe the shopping cart and checkout features of some popular websites to get some ideas!
